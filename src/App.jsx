@@ -1,9 +1,12 @@
 import React from "react";
-import Header from "./Components/Header";
+import Header from "./Components/header";
+import ResumePreview from "./Components/ResumePreview";
+import BulbBackground from "./Components/BulbBackground";
 
 const App = () => {
   return (
     <div className="w-full min-h-screen bg-gradient-to-br from-pink-200 via-pink-100 to-white">
+      <BulbBackground/>
       <Header />
 
       <div className="max-w-7xl mx-auto px-8 py-20 grid grid-cols-1 md:grid-cols-2 items-center">
@@ -44,11 +47,7 @@ const App = () => {
 
         {/* Right Side Resume Illustration */}
         <div className="hidden md:flex justify-center">
-          <div className="w-[350px] h-[480px] bg-white shadow-xl rounded-2xl border border-gray-200 p-6">
-            <div className="h-full bg-gray-100 rounded-xl flex items-center justify-center text-gray-400">
-              Resume Preview Here
-            </div>
-          </div>
+          <ResumePreview/>
         </div>
 
       </div>
